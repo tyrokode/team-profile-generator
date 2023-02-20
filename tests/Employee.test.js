@@ -22,7 +22,7 @@ describe('Name', () => {
 describe('ID', () => {
     it("should return the employee Id", () => {
         const id = "88";
-        const employee = new Employee(id);
+        const employee = new Employee("Grogu", id);
     
         expect(employee.id).toBe(id);
     });
@@ -31,7 +31,7 @@ describe('ID', () => {
 describe('Email', () => {
     it("should return employee Email", () => {
         const email = "Grogu@test.dev";
-        const employee = new Employee(email);
+        const employee = new Employee("Mando", 88, email);
     
         expect(employee.email).toBe(email);
     });
@@ -52,7 +52,7 @@ describe('getName', () => {
 describe('getID', () => {
     it("should get an ID through getID()", () => {
         const testId = "10";
-        const employee = new Employee(testId);
+        const employee = new Employee("Luke", testId);
     
         expect(employee.getID()).toBe(testId);
     });
@@ -61,7 +61,7 @@ describe('getID', () => {
 describe('getEmail', () => {
     it("should get an email through getEmail()", () => {
         const testEmail = "Mando@test.dev";
-        const employee = new Employee(testEmail);
+        const employee = new Employee("Luke", 88, testEmail);
     
         expect(employee.getEmail()).toBe(testEmail);
     });
@@ -70,8 +70,8 @@ describe('getEmail', () => {
 describe('getRole', () => {
     it("should return a role ", () => {
         const testRole = "Employee";
-        const employee = new Employee(testRole);
+        const employee = new Employee("Moff Gideon", 10, "gideon@test.dev");
     
-        expect(employee.getRole).toBe(testRole);
+        expect(employee.getRole()).toBe(testRole);
     });
 })

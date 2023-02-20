@@ -16,7 +16,7 @@ test("getOfficeNumber() will return office number", () => {
 
 test("getRole() will return github", () => {
     const role = "Manager";
-    const manager = new Manager('Yoda', 888, 'yoda1@test.dev', testOfficeNumber);
+    const manager = new Manager('Yoda', 888, 'yoda1@test.dev', role);
 
     expect(manager.getRole()).toBe(role);
 });

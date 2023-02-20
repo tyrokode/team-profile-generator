@@ -11,7 +11,7 @@ test("getGithub() will return github", () => {
     const testGithub = "theNewRepublic";
     const engineer = new Engineer('Gideon', 8, 'moffgideon@test.dev', testGithub);
 
-    expect(engineer.getGithub()).toBe(testGithub);
+    expect(engineer.getGitHub()).toBe(testGithub);
 });
 
 test("getRole() will return github", () => {
