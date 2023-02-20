@@ -246,3 +246,4 @@ addTeamMember();
 function generateHTML() {
     fs.writeFileSync(outputPath, generateTemplate(teamArray), "utf-8");
 }
+
